@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practica6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Gato" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mc-cf-XAE">
+                                <rect key="frame" x="1" y="74" width="412" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a3B-DE-5rZ">
+                                <rect key="frame" x="60" y="134" width="294" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="F5Z-FK-bht"/>
+                                    <constraint firstAttribute="width" constant="294" id="zZW-in-Z1m"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5RS-vi-rNn">
+                                <rect key="frame" x="60" y="267" width="294" height="99"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="emC-OJ-jc0"/>
+                                    <constraint firstAttribute="width" constant="294" id="yZY-Wn-mzh"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEx-3c-9FO">
+                                <rect key="frame" x="79.5" y="371" width="79" height="238"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Crear">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="crearGato:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cyH-M1-BfX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsY-JE-5Fx">
+                                <rect key="frame" x="167.5" y="371" width="79" height="238"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Jugar">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="jugar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Omx-AP-jGm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EXZ-Rb-hXn">
+                                <rect key="frame" x="261.5" y="371" width="79" height="238"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Comer">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="comer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ndn-4B-kBt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3Q-Bf-JGV">
+                                <rect key="frame" x="258.5" y="619" width="79" height="238"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Ficha">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mostrarFicha:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y5e-54-mht"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-sY-nCh">
+                                <rect key="frame" x="167.5" y="619" width="79" height="238"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Despertar">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="despertar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gc2-cy-Uxx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="im0-vv-u5w">
+                                <rect key="frame" x="76.5" y="619" width="79" height="238"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Dormir">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="dormir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gUL-1W-hgG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a3B-DE-5rZ" secondAttribute="trailing" constant="60" id="33A-sM-TBf"/>
+                            <constraint firstItem="3Gc-sY-nCh" firstAttribute="centerY" secondItem="a3Q-Bf-JGV" secondAttribute="centerY" id="3Qf-jo-J6U"/>
+                            <constraint firstItem="a3Q-Bf-JGV" firstAttribute="leading" secondItem="3Gc-sY-nCh" secondAttribute="trailing" constant="12" id="5Jj-lQ-bLa"/>
+                            <constraint firstItem="dsY-JE-5Fx" firstAttribute="centerY" secondItem="xEx-3c-9FO" secondAttribute="centerY" id="65p-qU-ufw"/>
+                            <constraint firstItem="im0-vv-u5w" firstAttribute="width" secondItem="3Gc-sY-nCh" secondAttribute="width" id="8Rd-fm-MQF"/>
+                            <constraint firstItem="5RS-vi-rNn" firstAttribute="centerX" secondItem="9mc-cf-XAE" secondAttribute="centerX" id="9Oa-ic-AE5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5RS-vi-rNn" secondAttribute="trailing" constant="60" id="Bmi-DX-Okc"/>
+                            <constraint firstItem="3Gc-sY-nCh" firstAttribute="top" secondItem="dsY-JE-5Fx" secondAttribute="bottom" constant="10" id="CXJ-H4-ZQG"/>
+                            <constraint firstItem="9mc-cf-XAE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Cbv-r3-neq"/>
+                            <constraint firstItem="5RS-vi-rNn" firstAttribute="top" secondItem="a3B-DE-5rZ" secondAttribute="bottom" constant="5" id="IH3-cG-avE"/>
+                            <constraint firstItem="dsY-JE-5Fx" firstAttribute="centerX" secondItem="5RS-vi-rNn" secondAttribute="centerX" id="O0N-ff-jul"/>
+                            <constraint firstItem="a3Q-Bf-JGV" firstAttribute="width" secondItem="3Gc-sY-nCh" secondAttribute="width" id="PYp-oa-s6M"/>
+                            <constraint firstItem="xEx-3c-9FO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79.5" id="QHS-Dv-Qpe"/>
+                            <constraint firstItem="xEx-3c-9FO" firstAttribute="height" secondItem="dsY-JE-5Fx" secondAttribute="height" id="Qja-gW-TJd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EXZ-Rb-hXn" secondAttribute="trailing" constant="73.5" id="R4d-K2-X7c"/>
+                            <constraint firstItem="5RS-vi-rNn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="Uyi-Dg-2aH"/>
+                            <constraint firstItem="dsY-JE-5Fx" firstAttribute="centerY" secondItem="EXZ-Rb-hXn" secondAttribute="centerY" id="XTT-Zh-NKC"/>
+                            <constraint firstItem="xEx-3c-9FO" firstAttribute="width" secondItem="im0-vv-u5w" secondAttribute="width" id="a4h-sv-yI4"/>
+                            <constraint firstItem="dsY-JE-5Fx" firstAttribute="leading" secondItem="xEx-3c-9FO" secondAttribute="trailing" constant="9" id="bbF-rW-jmn"/>
+                            <constraint firstItem="dsY-JE-5Fx" firstAttribute="top" secondItem="5RS-vi-rNn" secondAttribute="bottom" constant="5" id="cH1-v0-iNk"/>
+                            <constraint firstItem="3Gc-sY-nCh" firstAttribute="centerY" secondItem="im0-vv-u5w" secondAttribute="centerY" id="dUA-i2-s3V"/>
+                            <constraint firstItem="3Gc-sY-nCh" firstAttribute="height" secondItem="im0-vv-u5w" secondAttribute="height" id="ehZ-cZ-vyC"/>
+                            <constraint firstItem="a3B-DE-5rZ" firstAttribute="centerX" secondItem="9mc-cf-XAE" secondAttribute="centerX" id="fFs-6u-CkV"/>
+                            <constraint firstItem="3Gc-sY-nCh" firstAttribute="leading" secondItem="im0-vv-u5w" secondAttribute="trailing" constant="12" id="gf9-GJ-Zsg"/>
+                            <constraint firstItem="a3Q-Bf-JGV" firstAttribute="height" secondItem="3Gc-sY-nCh" secondAttribute="height" id="hBI-Kp-AI0"/>
+                            <constraint firstItem="a3B-DE-5rZ" firstAttribute="top" secondItem="9mc-cf-XAE" secondAttribute="bottom" constant="30" id="jiS-df-Vwz"/>
+                            <constraint firstItem="im0-vv-u5w" firstAttribute="height" secondItem="xEx-3c-9FO" secondAttribute="height" id="oH2-xn-LlQ"/>
+                            <constraint firstItem="dsY-JE-5Fx" firstAttribute="width" secondItem="EXZ-Rb-hXn" secondAttribute="width" id="pJX-8u-4RU"/>
+                            <constraint firstItem="a3Q-Bf-JGV" firstAttribute="height" secondItem="EXZ-Rb-hXn" secondAttribute="height" id="spf-HL-UC8"/>
+                            <constraint firstItem="dsY-JE-5Fx" firstAttribute="width" secondItem="xEx-3c-9FO" secondAttribute="width" id="ssn-Bu-hWy"/>
+                            <constraint firstItem="3Gc-sY-nCh" firstAttribute="centerX" secondItem="dsY-JE-5Fx" secondAttribute="centerX" id="urZ-H0-wEq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9mc-cf-XAE" secondAttribute="trailing" constant="1" id="us5-ks-gLx"/>
+                            <constraint firstItem="a3B-DE-5rZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="vDG-88-CJ4"/>
+                            <constraint firstItem="3Gc-sY-nCh" firstAttribute="height" secondItem="dsY-JE-5Fx" secondAttribute="height" id="wrZ-Lh-KoV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Gc-sY-nCh" secondAttribute="bottom" constant="5" id="xUD-gu-FlA"/>
+                            <constraint firstItem="EXZ-Rb-hXn" firstAttribute="leading" secondItem="dsY-JE-5Fx" secondAttribute="trailing" constant="15" id="yq8-dp-Lp1"/>
+                            <constraint firstItem="9mc-cf-XAE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="zxz-qC-igf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cajatexto" destination="5RS-vi-rNn" id="fU2-to-SFI"/>
+                        <outlet property="etiqueta" destination="9mc-cf-XAE" id="tks-gM-yML"/>
+                        <outlet property="vistaImagen" destination="a3B-DE-5rZ" id="6r8-B6-sWi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
